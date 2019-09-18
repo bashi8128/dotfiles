@@ -10,4 +10,4 @@ if [ ! -e $HOME/.tmux.conf ]; then
     ln -s $HOME/.tmux.conf $repo_path/tmux.conf
 fi
 
-echo 'path=( $path $HOME/bin )' >> $HOME/.zshrc
+echo 'path=( $path $HOME/bin )' >> $HOME/.zshenv
