@@ -7,6 +7,6 @@ my dotfiles
 ├── README.md
 ├── bin
 │   └── logging.sh
-├── set_script.sh
+├── set_env.sh
 └── tmux.conf
 ```
