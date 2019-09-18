@@ -7,7 +7,7 @@ if [ ! -e $HOME/bin ];then
 fi
 
 if [ ! -e $HOME/.tmux.conf ]; then
-    ln -s $repo_path/tmux.conf $HOME/.tmux.conf
+    ln -s $HOME/.tmux.conf $repo_path/tmux.conf
 fi
 
 echo 'path=( $path $HOME/bin )' >> $HOME/.zshrc
