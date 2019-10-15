@@ -28,20 +28,20 @@ if [ "$(uname)" = 'Darwin' ]; then
     if [ $? = 0 ];then
         # GNU date exists
     	date_command=gdate
-    	date_arg='+%Y_%m%d_%H%M%S_%N'
+    	date_arg=+'%Y %m %d_%H:%M:%S.%N'
     else
 	# GNU date does not exist
     	date_command=date
-    	date_arg='+%Y_%m%d_%H%M%S'
+    	date_arg=+'%Y %m %d_%H:%M:%S'
     fi
 else
     # Under Linux environment
     date_command=date
-    date_arg='+%Y_%m%d_%H%M%S_%N'
+    date_arg=+'%Y %m %d_%H:%M:%S.%N'
 fi
 
 while read -r LINE; do
     LINE=`echo ${LINE} | strip_cis`
-    echo \[`${date_command} ${date_arg}`\] ${LINE}
+    echo \[`${date_command} "${date_arg}"`\] ${LINE}
 done
 
