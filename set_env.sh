@@ -3,11 +3,11 @@
 repo_path=$(pwd)
 
 if [ ! -e $HOME/bin ];then
-    ln -s $HOME/bin $repo_path/bin
+    ln -s $repo_path/bin $HOME/bin
 fi
 
 if [ ! -e $HOME/.tmux.conf ]; then
-    ln -s $HOME/.tmux.conf $repo_path/tmux.conf
+    ln -s $repo_path/tmux.conf $HOME/.tmux.conf
 fi
 
 echo 'path=( $path $HOME/bin )' >> $HOME/.zshenv
