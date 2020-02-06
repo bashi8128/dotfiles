@@ -10,4 +10,5 @@ my dotfiles
 │   └── logging.sh
 ├── set_env.sh
 └── tmux.conf
+└── vimrc
 ```
