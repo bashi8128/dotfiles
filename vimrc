@@ -67,7 +67,6 @@ set wildmenu
 set wildmode=full
 let &t_SI = "\e]50;CursorShape=1\x7"
 let &t_EI = "\e]50;CursorShape=0\x7"
-colorscheme darkblue
 " Enable filetype detection, filetype specific plugin and indent
 filetype plugin indent on
 " Enable syntax highlighting
@@ -92,17 +91,17 @@ let g:ale_python_black_options = '-m black'
 """
 
 """ 
-if dein#tap('deoplete.nvim')
-    let g:deoplete#enable_at_startup = 1
-    let g:deoplete#auto_complete_delay = 0
-    let g:deoplete#auto_complete_start_length = 1
-    let g:deoplete#enable_camel_case = 0
-    let g:deoplete#enable_ignore_case = 0
-    let g:deoplete#enable_refresh_always = 0
-    let g:deoplete#enable_smart_case = 1
-    let g:deoplete#file#enable_buffer_path = 1
-    let g:deoplete#max_list = 10000
-endif
+"if dein#tap('deoplete.nvim')
+"    let g:deoplete#enable_at_startup = 1
+"    let g:deoplete#auto_complete_delay = 0
+"    let g:deoplete#auto_complete_start_length = 1
+"    let g:deoplete#enable_camel_case = 0
+"    let g:deoplete#enable_ignore_case = 0
+"    let g:deoplete#enable_refresh_always = 0
+"    let g:deoplete#enable_smart_case = 1
+"    let g:deoplete#file#enable_buffer_path = 1
+"    let g:deoplete#max_list = 10000
+"endif
 
 
 """ Use Skeleton for new file
@@ -162,3 +161,4 @@ nnoremap <Leader>h <C-w>h
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>j <C-w>j
 """
+colorscheme wombat
