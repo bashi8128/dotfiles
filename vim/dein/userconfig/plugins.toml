@@ -1,0 +1,47 @@
+[[plugins]]
+ repo = 'Shougo/dein.vim'
+
+[[plugins]]
+ repo = 'Shougo/vimproc.vim'
+
+[[plugins]]
+ repo =  'scrooloose/syntastic'
+
+[[plugins]]
+ repo = 'w0rp/ale'
+
+[[plugins]]
+ repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+ repo = 'kannokanno/previm'
+
+[[plugins]]
+ repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+ repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+ repo = 'vim-airline/vim-airline-themes'
+ 
+[[plugins]]
+ repo = 'mattn/vim-maketable'
+
+[[plugins]]
+ repo = 'Shougo/deoplete.nvim'
+
+[[plugins]]
+ repo = 'roxma/nvim-yarp'
+
+[[plugins]]
+ repo = 'roxma/vim-hug-neovim-rpc'
+
+[[plugins]]
+ repo = 'sheerun/vim-wombat-scheme'
+
+[[plugins]]
+ repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+ repo = 'rust-lang/rust.vim'
