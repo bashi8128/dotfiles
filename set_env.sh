@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Recognize OS
 UNAME_RES=`uname -a`
@@ -12,6 +12,8 @@ elif [[ $UNAME_RES =~ "Linux" ]]; then
     OS="CentOS"
   elif [[ $OS_RELEASE =~ "Ubuntu" ]]; then
     OS="Ubuntu"
+  elif [[ $OS_RELEASE =~ "debian" ]]; then
+    OS="Debian"
   fi
 fi
 
@@ -28,12 +30,27 @@ if [[ ! -d ~/.pyenv ]]; then
   git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 fi
 
+# Set up latest Package Management System
+if [[ $OS = "CentOS" ]]; then
+  yum -y upgrade
+elif [[ $OS = "Ubuntu" ]]; then
+  apt-get -y update
+  apt-get -y upgrade
+elif [[ $OS = "Debian" ]]; then
+  apt-get -y update
+  apt-get -y upgrade
+elif [[ $OS = "Darwin" ]]; then
+  port selfupdate
+fi
+
 # Set up latest tmux
 if [[ ! -d ~/git/tmux ]]; then
   if [[ $OS = "CentOS" ]]; then
     yum -y groupinstall "Development Tools"
     yum -y install libevent-devel ncurses-devel
   elif [[ $OS = "Ubuntu" ]]; then
+    apt-get install git automake bison build-essential pkg-config libevent-dev libncurses5-dev
+  elif [[ $OS = "Debian" ]]; then
     apt-get install git automake bison build-essential pkg-config libevent-dev libncurses5-dev
   elif [[ $OS = "FreeBSD" ]]; then
     pkg install libevent ncurses automake aclocal
@@ -46,7 +63,7 @@ if [[ ! -d ~/git/tmux ]]; then
   ./autogen.sh
   ./configure --prefix=/usr/local
   make
-  make insall
+  make install
 fi
 
 # Create symblic link if needed
