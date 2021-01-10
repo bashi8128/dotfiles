@@ -1,4 +1,3 @@
-""" Package control with dein.vim
 " Specify directory of dein
 let s:dein_path = expand('~/.vim/dein')
 let s:dein_repo_path = s:dein_path . '/repos/github.com/Shougo/dein.vim'
@@ -62,7 +61,6 @@ set number
 set shiftwidth=2
 set smartindent
 set showmatch
-set term=xterm-256color 
 set wildmenu
 set wildmode=full
 let &t_SI = "\e]50;CursorShape=1\x7"
@@ -78,7 +76,11 @@ syntax on
 let g:ale_fixers = {
 \  'python': ['autopep8', 'black', 'isort'],
 \ }
+let g:ale_linters = {
+\  'rust': ['analyzer'],
+\ }
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_save = 1
 let g:python3_host_prog = $PYENV_ROOT . '/versions/vim/bin/python'
 let g:ale_python_flake8_executable = g:python3_host_prog
 let g:ale_python_flake8_options = '-m flake8'
@@ -134,6 +136,9 @@ function! LastModified()
 " Call LastModified function when buffer saved.
 autocmd BufWritePre * call LastModified()
 """
+
+" 
+call dein#add('rust-lang/rust.vim')
 
 """ Enable persistent undo
 if has('persistent_undo')
