@@ -26,6 +26,12 @@
  repo = 'vim-airline/vim-airline-themes'
  
 [[plugins]]
+ repo = 'sheerun/vim-wombat-scheme'
+ 
+[[plugins]]
+ repo = 'ryanoasis/vim-devicons'
+ 
+[[plugins]]
  repo = 'mattn/vim-maketable'
 
 [[plugins]]
@@ -38,10 +44,10 @@
  repo = 'roxma/vim-hug-neovim-rpc'
 
 [[plugins]]
- repo = 'sheerun/vim-wombat-scheme'
-
-[[plugins]]
  repo = 'thinca/vim-quickrun'
 
 [[plugins]]
  repo = 'rust-lang/rust.vim'
+
+[[plugins]]
+ repo = 'tpope/vim-fugitive'
