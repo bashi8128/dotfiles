@@ -55,6 +55,9 @@ runtime myautoload/vim-option.vim
 """ Load vim-skel.vim to configure template for new file
 runtime myautoload/vim-skel.vim
 
+""" Load vim-binedit.vim to set binary edit mode
+runtime myautoload/vim-binedit.vim
+
 " Call LastModified function when buffer saved.
 autocmd BufWritePre * call LastModified()
 """
