@@ -1,4 +1,4 @@
 repos/
-cache\_vim/
-state\_vim.vim/
+cache_vim
+state_vim.vim
 .cache/
