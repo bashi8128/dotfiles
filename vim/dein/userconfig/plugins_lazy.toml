@@ -1,11 +1,34 @@
 [[plugins]]
-repo   = 'Shougo/unite.vim'
+ repo   = 'Shougo/unite.vim'
 
 # Load neomru.vim when unite.vim is loaded
 [[plugins]]
-repo      = 'Shougo/neomru.vim'
-on_source = ['unite.vim']
+ repo      = 'Shougo/neomru.vim'
+ on_source = ['unite.vim']
+
+# Plugins for Golang
+[[plugins]]
+ repo  = 'fatih/vim-go'
+ on_ft = ['go']
+
+# Plugins for Rust
+[[plugins]]
+ repo  = 'rust-lang/rust.vim'
+ on_ft = ['rust']
+
+# Plugins for markdown
+[[plugins]]
+ repo = 'plasticboy/vim-markdown'
+ on_ft = ['markdown']
 
 [[plugins]]
-repo = 'fatih/vim-go'
-on_ft = ['go']
+ repo = 'kannokanno/previm'
+ on_ft = ['markdown']
+
+[[plugins]]
+ repo = 'mattn/vim-maketable'
+ on_ft = ['markdown']
+
+[[plugins]]
+ repo = 'tyru/open-browser.vim'
+ on_ft = ['markdown']
