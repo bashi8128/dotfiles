@@ -11,15 +11,6 @@
  repo = 'w0rp/ale'
 
 [[plugins]]
- repo = 'plasticboy/vim-markdown'
-
-[[plugins]]
- repo = 'kannokanno/previm'
-
-[[plugins]]
- repo = 'tyru/open-browser.vim'
-
-[[plugins]]
  repo = 'vim-airline/vim-airline'
 
 [[plugins]]
@@ -32,9 +23,6 @@
  repo = 'ryanoasis/vim-devicons'
  
 [[plugins]]
- repo = 'mattn/vim-maketable'
-
-[[plugins]]
  repo = 'Shougo/deoplete.nvim'
 
 [[plugins]]
@@ -45,9 +33,6 @@
 
 [[plugins]]
  repo = 'thinca/vim-quickrun'
-
-[[plugins]]
- repo = 'rust-lang/rust.vim'
 
 [[plugins]]
  repo = 'tpope/vim-fugitive'
