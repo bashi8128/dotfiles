@@ -62,6 +62,15 @@ runtime myautoload/vim-binedit.vim
 autocmd BufWritePre * call LastModified()
 """
 
+highlight cursorline term=reverse cterm=none ctermbg=none
+highlight Normal ctermbg=none
+highlight Nontext ctermbg=none
+highlight LineNr ctermbg=none
+highlight Folded ctermbg=none
+highlight EndOfBuffer ctermbg=none
+highlight StatusLine ctermbg=none
+highlight StatusLineNC ctermbg=none
+
 """ Enable persistent undo
 if has('persistent_undo')
   set undodir=~/.vim/undo
