@@ -18,16 +18,13 @@ if [[ -d /opt/local/share/zsh/site-functions ]] then
 fi
 autoload -U compinit # Load builtin function named compinit
 compinit
-export LSCOLORS=exfxcxdxbxegedabagacad
-export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30F:tw=42;30:ow=43;30'
 
 bindkey -e
 
-#eval $(gdircolors)
-#zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} # Color highight based on colors which can use in gdircolors
-zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
+eval $(dircolors)
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} # Color highight based on colors which can use in gdircolors
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # Handle capital letter and small letter in the same manner when completion.
-zstyle ':completion:*' menu select=2 
+zstyle ':completion:*' menu select=2
 
 # prompt
 PROMPT="%(1j|%F{027}|%F{051})bashi%f[%m]%# " # Set Left Prompt Format.
@@ -76,8 +73,8 @@ HISTFILE=~/.zhistory
 alias ls="ls -GF" # -G : -F :
 alias ll="ls -l"
 alias la="ls -a"
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw' # -nw : Terminal Emacs
-alias e='/Applications/Emacs.app/Contents/MacOS/Emacs -nw' # Set 'e' for Emacs
+alias e="exa"
+alias ee="exa -l"
 alias v='vim' # Set 'v' for neovim
 alias jbibtex="pbibtex" #Set 'jbibtex' for pbibtex which allows to manage bibliography
 alias grep="grep --color=auto"
@@ -247,3 +244,7 @@ done
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+
+export EDITOR=vim
