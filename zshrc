@@ -242,6 +242,11 @@ do
 done
 }
 
+# git diff with bat command
+function bdiff() {
+  git diff --name-only --diff-filter=d 2> /dev/null | xargs bat --diff
+}
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
