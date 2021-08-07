@@ -1,5 +1,10 @@
 # Configuration file for tmux
 # tmux version: 3.0a
 
-# Options
-## Server options
+# bindkeys
+## copy selected text to clipboard(Wayland only, wl-clipboard is required)
+if-shell -b "type wl-paste" " \
+ bind-key -T copy-mode-vi y send-keys -X copy-pipe-no-clear 'wl-copy' \
+ bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel 'wl-copy' \
+ bind-key ] run 'wl-paste --no-newline | tmux load-buffer -; tmux paste-buffer'"
+
