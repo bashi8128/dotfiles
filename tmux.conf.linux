@@ -1,5 +1,4 @@
 # Configuration file for tmux
-# tmux version: 3.0a
 
 # bindkeys
 ## copy selected text to clipboard(Wayland only, wl-clipboard is required)
@@ -8,3 +7,7 @@ bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "wl-copy"
 unbind-key ]
 bind-key ] run "wl-paste --no-newline | tmux load-buffer -; tmux paste-buffer"
 
+
+# TPM(Tmux Plugin Manager)
+## Parameters for tmux-thumbs
+set -g @thumbs-command 'tmux set-buffer -- {} && echo -n {} | wl-copy'
