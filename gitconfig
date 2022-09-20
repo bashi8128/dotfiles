@@ -1,0 +1,37 @@
+[user]
+	name = bashi8128
+	email = itabasi.lm@gmail.com
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	ui = true
+
+[alias]
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+	co = checkout
+	sw = switch
+
+[core]
+	quotepath = false
+	excludesfile = /home/itabashi/.gitignore_global
+	attributesfile = /home/itabashi/.gitattributes
+	editor = nvim
+	pager = delta
+
+[diff "xlsx"]
+	binary = true
+	textconv = /home/itabashi/go/bin/git-xlsx-textconv
+
+[init]
+	defaultBranch = main
+
+[pull]
+	ff = only
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
