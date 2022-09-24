@@ -70,11 +70,6 @@ SAVEHIST=100000
 HISTFILE=~/.zhistory
 
 # alias which can be used at the sentence beginning
-alias ls="ls -GF" # -G : -F :
-alias ll="ls -l"
-alias la="ls -a"
-alias e="exa"
-alias ee="exa -l"
 alias v='vim' # Set 'v' for neovim
 alias vim='nvim' # Set 'v' for neovim
 alias jbibtex="pbibtex" #Set 'jbibtex' for pbibtex which allows to manage bibliography
@@ -84,6 +79,16 @@ alias jpn="jupyter notebook"
 # global alias which can be used in the sentence
 alias -g G="| grep" # search specific string from result of previous command
 alias -g L="| less" # preview result of previous command in the less term
+# Use exa instead of ls if exa exists
+if [[ $(type exa) ]]
+then
+  alias e="exa"
+  alias ee="e -l"
+  alias ea="e -aa"
+  alias ls="e"
+  alias ll="ee"
+  alias la="ea"
+fi
 #if [[ -x `which colordiff` ]]; then
     #alias diff='colordiff'
     #fi
