@@ -5,34 +5,46 @@
  repo = 'Shougo/vimproc.vim'
 
 [[plugins]]
- repo =  'scrooloose/syntastic'
-
-[[plugins]]
  repo = 'w0rp/ale'
 
 [[plugins]]
  repo = 'vim-airline/vim-airline'
 
+# A collection of themes for vim-airline
 [[plugins]]
  repo = 'vim-airline/vim-airline-themes'
  
+# Wombat-like scheme
 [[plugins]]
  repo = 'sheerun/vim-wombat-scheme'
  
+# Adds file type icons to Vim plugins
 [[plugins]]
  repo = 'ryanoasis/vim-devicons'
  
-[[plugins]]
- repo = 'Shougo/deoplete.nvim'
+## Asynchronous completion framework
+#[[plugins]]
+# repo = 'Shougo/deoplete.nvim'
+#
+## Yet Another Remote Plugin Framework for Neovim
+## required by deoplete only in Vim environmet
+#[[plugins]]
+# repo = 'roxma/nvim-yarp'
+#
+## Compatibility layer for neovim rpc client in Vim
+## required by deoplete only in Vim environmet
+#[[plugins]]
+# repo = 'roxma/vim-hug-neovim-rpc'
 
-[[plugins]]
- repo = 'roxma/nvim-yarp'
-
-[[plugins]]
- repo = 'roxma/vim-hug-neovim-rpc'
-
+# Runs any commands and show results of thoese in buffer
 [[plugins]]
  repo = 'thinca/vim-quickrun'
 
+# A Git wrapper
 [[plugins]]
  repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+ repo = 'pearofducks/ansible-vim'
+ on_ft = ['yaml']
+

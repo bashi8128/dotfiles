@@ -76,6 +76,7 @@ alias la="ls -a"
 alias e="exa"
 alias ee="exa -l"
 alias v='vim' # Set 'v' for neovim
+alias vim='nvim' # Set 'v' for neovim
 alias jbibtex="pbibtex" #Set 'jbibtex' for pbibtex which allows to manage bibliography
 alias grep="grep --color=auto"
 alias py="python"
@@ -246,6 +247,9 @@ done
 function bdiff() {
   git diff --name-only --diff-filter=d 2> /dev/null | xargs bat --diff
 }
+
+fpath=($fpath ~/.zfunc)
+autoload -Uz compinit && compinit
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

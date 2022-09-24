@@ -16,3 +16,13 @@ let g:ale_python_isort_executable = g:python3_host_prog
 let g:ale_python_isort_options = '-m isort'
 let g:ale_python_black_executable = g:python3_host_prog
 let g:ale_python_black_options = '-m black'
+
+let g:airline#extensions#cursormode#enabled = 0
+
+let g:shfmt_fmt_on_save = 1
+
+let g:ale_disable_lsp = 1
+
+let g:coc_filetype_map = {
+  \ 'yaml.ansible': 'ansible',
+  \ }
