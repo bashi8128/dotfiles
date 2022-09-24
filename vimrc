@@ -40,9 +40,6 @@ endif
 " Enable filetype detection, filetype specific plugin and indent
 filetype plugin indent on
 
-""" Load vim-ale.vim to configure ALE settings
-runtime myautoload/vim-ale.vim
-
 """ Load vim-appearance.vim to configure VIM appearance
 runtime myautoload/vim-appearance.vim
 
@@ -51,6 +48,9 @@ runtime myautoload/vim-keymap.vim
 
 """ Load vim-option.vim to set basic options
 runtime myautoload/vim-option.vim
+
+""" Load vim-plugins.vim to configure plugin related settings
+runtime myautoload/vim-plugins.vim
 
 """ Load vim-skel.vim to configure template for new file
 runtime myautoload/vim-skel.vim

@@ -36,3 +36,14 @@
 [[plugins]]
  repo = 'hashivim/vim-terraform'
  on_ft = ['ft', 'terraform']
+
+[[plugins]]
+ repo = 'z0mbix/vim-shfmt'
+ on_ft = ['sh']
+
+# Load extensions like VSCode and host language servers
+[[plugins]]
+ repo = 'neoclide/coc.nvim'
+ rev = 'release'
+ on_i = 1
+ merged = '0'
