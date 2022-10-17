@@ -16,3 +16,5 @@ nnoremap <Leader>l <C-w>l
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>j <C-w>j
+nnoremap ]] <cmd>bnext<CR>
+nnoremap [[ <cmd>bprevious<CR>
