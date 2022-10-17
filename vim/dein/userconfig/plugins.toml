@@ -48,3 +48,8 @@
  repo = 'pearofducks/ansible-vim'
  on_ft = ['yaml']
 
+# Load extensions like VSCode and host language servers
+[[plugins]]
+ repo = 'neoclide/coc.nvim'
+ rev = 'release'
+ merged = '0'

@@ -43,6 +43,9 @@ filetype plugin indent on
 """ Load vim-appearance.vim to configure VIM appearance
 runtime myautoload/vim-appearance.vim
 
+""" Load vim-coc.vim to configure coc-nvim related settings
+runtime myautoload/vim-coc.vim
+
 """ Load vim-keymap.vim to set up key-map
 runtime myautoload/vim-keymap.vim
 
