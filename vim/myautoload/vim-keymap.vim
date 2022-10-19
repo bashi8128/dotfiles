@@ -16,5 +16,7 @@ nnoremap <Leader>l <C-w>l
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>j <C-w>j
-nnoremap ]] <cmd>bnext<CR>
-nnoremap [[ <cmd>bprevious<CR>
+nnoremap <Leader>b <cmd>enew<CR>
+nnoremap <Leader>] <cmd>bnext<CR>
+nnoremap <Leader>[ <cmd>bprevious<CR>
+nnoremap <Leader>d <cmd>bdelete<CR>
