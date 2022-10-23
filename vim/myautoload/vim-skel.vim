@@ -1,14 +1,14 @@
 """ Setting for skelton files
 augroup SkeletonAu
 autocmd!
-autocmd BufNewFile *.html 0r $HOME/.vim/skel/skel.html
-autocmd BufNewFile *.c 0r $HOME/.vim/skel/skel.c
-autocmd BufNewFile *.rs 0r $HOME/.vim/skel/skel.rs
-autocmd BufNewFile *.css 0r $HOME/.vim/skel/skel.css
-autocmd BufNewFile *.scss 0r $HOME/.vim/skel/skel.scss
-autocmd BufNewFile *.py 0r $HOME/.vim/skel/skel.py
-autocmd BufNewFile *.rb 0r $HOME/.vim/skel/skel.rb
-autocmd BufNewFile *.tex 0r $HOME/.vim/skel/skel.tex
+autocmd BufNewFile *.html 0r $HOME/.config/nvim/skel/skel.html
+autocmd BufNewFile *.c 0r $HOME/.config/nvim/skel/skel.c
+autocmd BufNewFile *.rs 0r $HOME/.config/nvim/skel/skel.rs
+autocmd BufNewFile *.css 0r $HOME/.config/nvim/skel/skel.css
+autocmd BufNewFile *.scss 0r $HOME/.config/nvim/skel/skel.scss
+autocmd BufNewFile *.py 0r $HOME/.config/nvim/skel/skel.py
+autocmd BufNewFile *.rb 0r $HOME/.config/nvim/skel/skel.rb
+autocmd BufNewFile *.tex 0r $HOME/.config/nvim/skel/skel.tex
 augroup END
 
 """ Enable auto timestamp
