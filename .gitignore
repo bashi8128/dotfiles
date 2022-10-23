@@ -1,4 +1,7 @@
 repos/
 cache_vim
+cache_nvim
 state_vim.vim
+state_nvim.vim
 .cache/
+undo/
