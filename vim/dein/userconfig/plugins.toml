@@ -53,3 +53,10 @@
  repo = 'neoclide/coc.nvim'
  rev = 'release'
  merged = '0'
+
+[[plugins]]
+ repo = 'vim-scripts/autodate.vim'
+ hook_add = '''
+   let g:autodate_keyword_pre = "Last modified:"
+   let g:autodate_format = "%a, %d %b %Y %X %z"
+ '''
