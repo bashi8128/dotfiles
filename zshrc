@@ -82,7 +82,7 @@ alias -g L="| less" # preview result of previous command in the less term
 # Use exa instead of ls if exa exists
 if [[ $(type exa) ]]
 then
-  alias e="exa"
+  alias e="exa -g"
   alias ee="e -l"
   alias ea="e -aa"
   alias ls="e"
