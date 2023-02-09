@@ -16,8 +16,6 @@ colors
 if [[ -d /opt/local/share/zsh/site-functions ]] then
   fpath=(/opt/local/share/zsh/site-functions $fpath)
 fi
-autoload -U compinit # Load builtin function named compinit
-compinit
 
 bindkey -e
 
@@ -80,7 +78,7 @@ alias jpn="jupyter notebook"
 alias -g G="| grep" # search specific string from result of previous command
 alias -g L="| less" # preview result of previous command in the less term
 # Use exa instead of ls if exa exists
-if [[ $(type exa) ]]
+if type exa > /dev/null
 then
   alias e="exa -g"
   alias ee="e -l"
@@ -89,10 +87,12 @@ then
   alias ll="ee"
   alias la="ea"
 fi
-#if [[ -x `which colordiff` ]]; then
-    #alias diff='colordiff'
-    #fi
 
+# Set mkubectl if minikube is installed
+if type minikube > /dev/null
+then
+  alias mkubectl="minikube kubectl --"
+fi
 
 # misc
 DIRSTACKSIZE=10
