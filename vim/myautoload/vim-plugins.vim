@@ -26,3 +26,7 @@ let g:ale_disable_lsp = 1
 let g:coc_filetype_map = {
   \ 'yaml.ansible': 'ansible',
   \ }
+
+if has('wsl')
+  let g:previm_wsl_mode = 1
+endif

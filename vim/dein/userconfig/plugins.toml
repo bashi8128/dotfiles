@@ -5,9 +5,6 @@
  repo = 'Shougo/vimproc.vim'
 
 [[plugins]]
- repo = 'w0rp/ale'
-
-[[plugins]]
  repo = 'vim-airline/vim-airline'
 
 # A collection of themes for vim-airline
@@ -22,20 +19,6 @@
 [[plugins]]
  repo = 'ryanoasis/vim-devicons'
  
-## Asynchronous completion framework
-#[[plugins]]
-# repo = 'Shougo/deoplete.nvim'
-#
-## Yet Another Remote Plugin Framework for Neovim
-## required by deoplete only in Vim environmet
-#[[plugins]]
-# repo = 'roxma/nvim-yarp'
-#
-## Compatibility layer for neovim rpc client in Vim
-## required by deoplete only in Vim environmet
-#[[plugins]]
-# repo = 'roxma/vim-hug-neovim-rpc'
-
 # Runs any commands and show results of thoese in buffer
 [[plugins]]
  repo = 'thinca/vim-quickrun'
@@ -44,19 +27,8 @@
 [[plugins]]
  repo = 'tpope/vim-fugitive'
 
-[[plugins]]
- repo = 'pearofducks/ansible-vim'
- on_ft = ['yaml']
-
 # Load extensions like VSCode and host language servers
 [[plugins]]
  repo = 'neoclide/coc.nvim'
  rev = 'release'
  merged = '0'
-
-[[plugins]]
- repo = 'vim-scripts/autodate.vim'
- hook_add = '''
-   let g:autodate_keyword_pre = "Last modified:"
-   let g:autodate_format = "%a, %d %b %Y %X %z"
- '''
