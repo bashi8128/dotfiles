@@ -40,3 +40,15 @@
 [[plugins]]
  repo = 'z0mbix/vim-shfmt'
  on_ft = ['sh']
+
+[[plugins]]
+ repo = 'vim-scripts/autodate.vim'
+ hook_add = '''
+   let g:autodate_keyword_pre = "Last modified:"
+   let g:autodate_format = "%a, %d %b %Y %X %z"
+ '''
+ on_event = 'InsertCharPost'
+
+[[plugins]]
+ repo = 'pearofducks/ansible-vim'
+ on_ft = ['yaml']

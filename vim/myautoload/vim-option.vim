@@ -22,3 +22,4 @@ set smartindent
 set showmatch
 set wildmenu
 set wildmode=full
+set mouse=nv
