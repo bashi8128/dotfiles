@@ -74,9 +74,8 @@ alias jbibtex="pbibtex" #Set 'jbibtex' for pbibtex which allows to manage biblio
 alias grep="grep --color=auto"
 alias py="python"
 alias jpn="jupyter notebook"
-# global alias which can be used in the sentence
-alias -g G="| grep" # search specific string from result of previous command
-alias -g L="| less" # preview result of previous command in the less term
+alias igrep="grep -vE '(^$|^\s*#)'"
+
 # Use exa instead of ls if exa exists
 if type exa > /dev/null
 then
@@ -87,6 +86,18 @@ then
   alias ll="ee"
   alias la="ea"
 fi
+
+# Shorten the command 'kubectl'
+if type kubectl > /dev/null
+then
+  alias k="kubectl"
+fi
+
+# global alias which can be used in the sentence
+alias -g G="| grep" # search specific string from result of previous command
+alias -g L="| less" # preview result of previous command in the less term
+alias -g Be="| base64 -e" # encode strings with base64 encoding
+alias -g Bd="| base64 -d" # Decode strings encoded with base64 encoding
 
 # Set mkubectl if minikube is installed
 if type minikube > /dev/null
