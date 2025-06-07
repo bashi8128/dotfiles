@@ -1,6 +1,7 @@
 [user]
 	name = bashi8128
 	email = itabasi.lm@gmail.com
+	signingkey = A202685984C44273
 
 [color]
 	diff = auto
@@ -36,3 +37,11 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[gpg "ssh"]
+	allowedSignersFile = /home/itabashi/.ssh/allowed_signers
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
