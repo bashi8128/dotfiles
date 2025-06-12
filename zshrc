@@ -108,7 +108,7 @@ fi
 # misc
 DIRSTACKSIZE=10
 WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
-export LESSOPEN='|lessfilter.sh %s'
+export LESSOPEN='|lesspipe.sh %s'
 export LESS='--RAW-CONTROL-CHARS'
 
 autoload history-search-end
