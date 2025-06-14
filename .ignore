@@ -1,0 +1,10 @@
+.git
+*.zip
+*.gz
+*.xz
+*.jar
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.bin
