@@ -1,3 +1,0 @@
-#!/bin/zsh
-
-echo "#[fg=cyan,bold]$(uptime | awk '{print $(NF-2)}' | sed 's/,//')#[default] "
