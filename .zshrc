@@ -80,8 +80,8 @@ alias igrep="grep -vE '(^$|^\s*#)'"
 if type eza > /dev/null
 then
   alias e="eza -g"
-  alias ee="e -l --icons"
-  alias ea="e -aa --icons"
+  alias ee="e -l --icons=automatic"
+  alias ea="e -a --icons=automatic"
   alias ls="e"
   alias ll="ee"
   alias la="ea"
