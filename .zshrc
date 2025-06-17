@@ -272,3 +272,7 @@ export LANG=en_US.UTF-8
 
 export EDITOR=vim
 export GPG_TTY=$(tty)
+
+# Settings for .dotfiles manged in bare Git repository
+export DOTFILES_DIR="${HOME}/.dotfiles"
+alias config='/usr/bin/git --git-dir="${DOTFILES_DIR}" --work-tree="${HOME}"'
