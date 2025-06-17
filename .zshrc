@@ -76,10 +76,10 @@ alias py="python"
 alias jpn="jupyter notebook"
 alias igrep="grep -vE '(^$|^\s*#)'"
 
-# Use exa instead of ls if exa exists
-if type exa > /dev/null
+# Use eza instead of ls if eza exists
+if type eza > /dev/null
 then
-  alias e="exa -g"
+  alias e="eza -g"
   alias ee="e -l"
   alias ea="e -aa"
   alias ls="e"
