@@ -270,7 +270,5 @@ autoload -Uz compinit && compinit
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-
 export EDITOR=vim
 export GPG_TTY=$(tty)
