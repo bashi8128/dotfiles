@@ -18,6 +18,5 @@ config checkout
 ```
 
 > [!CAUTION]
-> If there are already managed files in your home directory,  
-> `config checkout` may fail. In that case, please back up the existing  
-> files and run the `config checkout` again.
+> If there are already managed files in your home directory, `config checkout` may fail.  
+> In that case, please back up the existing files and run the `config checkout` again.
