@@ -15,4 +15,4 @@ if [ -f '/home/itabashi/.bin/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ita
 if [ -f '/home/itabashi/.bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/itabashi/.bin/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Use atuin
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
