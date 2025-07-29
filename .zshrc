@@ -270,7 +270,7 @@ autoload -Uz compinit && compinit
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export EDITOR=vim
+export EDITOR=nvim
 export GPG_TTY=$(tty)
 
 # Settings for .dotfiles manged in bare Git repository
