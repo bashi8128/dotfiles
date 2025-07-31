@@ -99,6 +99,16 @@ alias -g L="| less" # preview result of previous command in the less term
 alias -g Be="| base64 -e" # encode strings with base64 encoding
 alias -g Bd="| base64 -d" # Decode strings encoded with base64 encoding
 
+if type yq > /dev/null
+then
+  alias -g Y="| yq" # Decode strings encoded with base64 encoding
+fi
+
+if type jq > /dev/null
+then
+  alias -g J="| jq" # Decode strings encoded with base64 encoding
+fi
+
 # Set mkubectl if minikube is installed
 if type minikube > /dev/null
 then
