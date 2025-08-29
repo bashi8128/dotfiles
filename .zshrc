@@ -286,3 +286,6 @@ export GPG_TTY=$(tty)
 # Settings for .dotfiles manged in bare Git repository
 export DOTFILES_DIR="${HOME}/.dotfiles"
 alias config='/usr/bin/git --git-dir="${DOTFILES_DIR}" --work-tree="${HOME}"'
+
+# Settings for misc
+export MISE_OVERRIDE_CONFIG_FILENAMES=.mise.toml
