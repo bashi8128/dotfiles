@@ -85,6 +85,9 @@ then
   alias ls="e"
   alias ll="ee"
   alias la="ea"
+else
+  alias ll="ls -l"
+  alias la="ls -a"
 fi
 
 # Shorten the command 'kubectl'
