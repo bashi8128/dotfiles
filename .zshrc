@@ -40,17 +40,17 @@ precmd_function1(){
   if [[ -n "$vcs_info_msg_0_" ]]
  then
     psvar[1]="$vcs_info_msg_0_"
-    if [[ -n “$vcs_info_msg_1_” ]]
+    if [[ -n "$vcs_info_msg_1_" ]]
     then
-      psvar[2]=”$vcs_info_msg_1_”
-    elif [[ -n “$vcs_info_msg_2_” ]]
+      psvar[2]="$vcs_info_msg_1_"
+    elif [[ -n "$vcs_info_msg_2_" ]]
     then
-      psvar[2]=”$vcs_info_msg_2_”
-    elif [[ -n `echo “$st” | grep “^Untracked”` ]]
+      psvar[2]="$vcs_info_msg_2_"
+    elif [[ -n `echo “$st" | grep “^Untracked"` ]]
     then
-      psvar[2]=”Untracked”
+      psvar[2]="Untracked"
     else
-      psvar[2]=”Clean”
+      psvar[2]="Clean"
     fi
   fi
   RPROMPT="%1(v|${vcs_info_msg_0_}|)%{$fg[green]%}[%(5~,~/.../%2~,%~)]%{$reset_color%}" # Set Right Prompt Format.
