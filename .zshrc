@@ -13,7 +13,7 @@ setopt NO_BEEP # Do not beep
 # setting about color
 autoload -U colors # Load builtin function named compinit
 colors
-if [[ -d /opt/local/share/zsh/site-functions ]] then
+if [[ -d /opt/local/share/zsh/site-functions ]]; then
   fpath=(/opt/local/share/zsh/site-functions $fpath)
 fi
 
