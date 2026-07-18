@@ -46,7 +46,7 @@ precmd_function1(){
     elif [[ -n "$vcs_info_msg_2_" ]]
     then
       psvar[2]="$vcs_info_msg_2_"
-    elif [[ -n `echo “$st" | grep “^Untracked"` ]]
+    elif [[ -n `echo "$st" | grep "^Untracked"` ]]
     then
       psvar[2]="Untracked"
     else
