@@ -19,7 +19,7 @@ fi
 
 bindkey -e
 
-eval $(dircolors)
+eval "$(dircolors)"
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} # Color highight based on colors which can use in gdircolors
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' # Handle capital letter and small letter in the same manner when completion.
 zstyle ':completion:*' menu select=2
@@ -80,8 +80,8 @@ alias igrep="grep -vE '(^$|^\s*#)'"
 if type eza > /dev/null
 then
   alias e="eza -g"
-  alias ee="e -l --icons=automatic"
-  alias ea="e -a --icons=automatic"
+  alias ee="e -l --icons=auto"
+  alias ea="e -a --icons=auto"
   alias ls="e"
   alias ll="ee"
   alias la="ea"
@@ -138,7 +138,7 @@ function google() {
     for i
     do search_string="$search_string+$i"
     done
-    open http://www.google.co.jp/search\?q=$search_string\&hl=jaf
+    open http://www.google.co.jp/search\?q=$search_string\&hl=ja
 }
 
 # ブランチ名を色付きで表示させるメソッド
