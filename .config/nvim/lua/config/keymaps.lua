@@ -10,12 +10,12 @@ map("n", "j", "gj", { desc = "Down (display line)" })
 map("n", "k", "gk", { desc = "Up   (display line)" })
 map("n", "J", "}",  { desc = "Next paragraph" })
 map("n", "K", "{",  { desc = "Prev paragraph" })
+map("n", "<leader>mJ", "J", { desc = "Join lines (default J)" })
 
---
-map("n", "q1",  ":q!<CR>", { silent = true })
-map("n", "wq",  ":wq<CR>", { silent = true })
-map("n", "wqq", ":wq!<CR>", { silent = true })
-map("n", "ww",  ":w<CR>",  { silent = true })
+map("n", "<leader>mq", ":q!<CR>",  { silent = true, desc = "Force quit" })
+map("n", "<leader>mQ", ":wq<CR>",  { silent = true, desc = "Write & quit" })
+map("n", "<leader>mZ", ":wq!<CR>", { silent = true, desc = "Force write & quit" })
+map("n", "<leader>ms", ":w<CR>",   { silent = true, desc = "Save" })
 
 map("n", "<leader>mw", "<C-w>w", { silent = true })
 map("n", "<leader>ml", "<C-w>l", { silent = true })
