@@ -1,5 +1,5 @@
 return {
-  { "shaunsingh/nord.nvim" },
+  { "catppuccin/nvim", name = "catppuccin", lazy = false, priority = 1000 },
   {
     "LazyVim/LazyVim",
     opts = {
