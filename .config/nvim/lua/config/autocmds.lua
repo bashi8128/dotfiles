@@ -17,9 +17,8 @@ local skeltons = {
   { "*.cu",   "~/.config/nvim/skel/skel.cu"   },
   { "*.rs",   "~/.config/nvim/skel/skel.rs"   },
   { "*.css",  "~/.config/nvim/skel/skel.css"  },
-  { "*.scss", "~/.config/nvim/skel/skel.scss" },
   { "*.py",   "~/.config/nvim/skel/skel.py"   },
-  { "*.rb",   "~/.config/nvim/skel/skel.rb"   },
+  { "*.sh",   "~/.config/nvim/skel/skel.sh"   },
   { "*.tex",  "~/.config/nvim/skel/skel.tex"  },
 }
 
@@ -36,7 +35,7 @@ for _, value in pairs(skeltons) do
   })
 end
 
--- Insert timestamp after "Last Modified: Sat, 02 May 2026 23:11:54 +0900
+-- Insert timestamp after "Last Modified: Tue, 18 Aug 2026 04:09:03 +0900
 local function LastModified()
   if vim.bo.modified then
     local save_cursor = vim.fn.getpos(".")
